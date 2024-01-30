@@ -4,7 +4,7 @@ ENV container=docker
 
 ENV pip_packages "ansible"
 
-# Install systemd -- See https://hub.docker.com/_/centos/
+# Cleanup systemd -- See https://hub.docker.com/_/centos/
 RUN rm -f /lib/systemd/system/multi-user.target.wants/*;\
     rm -f /etc/systemd/system/*.wants/*;\
     rm -f /lib/systemd/system/local-fs.target.wants/*; \
